@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../composables/useAuth.tsx'
 
-const Login = (): JSX.Element => {
+const Login: React.FC = () => {
   const { login } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
